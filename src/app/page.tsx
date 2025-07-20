@@ -1,9 +1,20 @@
-import Image from "next/image";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
+import { createClient } from "@/prismicio";
+import { components } from "@/slices";
 
-export default function Home() {
+export default async function Home() {
+  const client = createClient();
+
+  // 1. Fetch the page with UID "home"
+  const page = await client.getByUID("page", "home");
+
+  // 2. Render the page content
   return (
-    <div className="h-screen w-full max-w-[1550px] mx-auto">
-      <p>This is the content</p>
-    </div>
+    <main>
+      <PrismicRichText field={page.data.title}></PrismicRichText>
+
+      {/* 3. Render the slices from this page */}
+      <SliceZone slices={page.data.slices} components={components} />
+    </main>
   );
 }
