@@ -6,7 +6,7 @@ export default async function Home() {
   const client = createClient();
 
   // 1. Fetch the page with UID "home"
-  const page = await client.getByUID("page", "home");
+  const page = await client.getByUID("page", "home", { lang: "en-us" });
 
   // 2. Render the page content
   return (
