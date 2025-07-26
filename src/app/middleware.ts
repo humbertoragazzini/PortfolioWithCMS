@@ -16,3 +16,7 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.redirect(new URL(`/${lang}${pathname}`, request.url));
 }
+
+export const config = {
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
+};
