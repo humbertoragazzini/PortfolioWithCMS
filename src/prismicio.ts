@@ -3,13 +3,18 @@ import { enableAutoPreviews } from "@prismicio/next";
 import type { Route } from "@prismicio/client";
 import type { ClientConfig } from "@prismicio/client";
 
+if (!process.env.PRISMIC_REPOSITORY_NAME) {
+  console.warn("Enviroment PRISMIC_REPOSITORY_NAME is missing!");
+}
+
 //Replace this with your actual repo name from prismic.io/dashboard
 export const repositoryName = process.env.PRISMIC_REPOSITORY_NAME!;
 
 const routes: Route[] = [
   {
     type: "page",
-    path: "/:uid",
+    uid: "home",
+    path: "/",
   },
 ];
 

@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="max-w-[1550px] mx-auto">
-          <OverlayMenu></OverlayMenu>
+          {/* <OverlayMenu></OverlayMenu> */}
         </div>
         {children}
         <div className="max-w-[1550px] mx-auto">
