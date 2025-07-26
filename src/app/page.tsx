@@ -11,9 +11,7 @@ export default async function Home() {
   // 2. Render the page content
   return (
     <main>
-      {/* <PrismicRichText field={page.data.title}></PrismicRichText>
-
-      {/* 3. Render the slices from this page */}
+      <PrismicRichText field={page.data.title}></PrismicRichText>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
   );
