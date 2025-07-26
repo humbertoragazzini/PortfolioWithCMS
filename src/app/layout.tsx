@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import OverlayMenu from "@/compontents/atoms/OverlayMenu";
+import OverlayMenu from "@/components/atoms/OverlayMenu";
 import { Orbitron } from "next/font/google";
 
 const orbit = Orbitron({
