@@ -1,14 +1,28 @@
-import { NextRequest, NextResponse } from "next/server";
+// middleware.ts
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  console.log("✅ Middleware triggered:", request.nextUrl.pathname);
-
-  return NextResponse.next();
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  console.log("caca");
+  try {
+    console.log("✅ Middleware triggered:", request.nextUrl.pathname);
+    console.log("caca");
+    return NextResponse.next();
+  } catch (err) {
+    console.error("❌ Middleware error:", err);
+    return new Response("Middleware crashed", { status: 500 });
+  }
 }
-
-export const config = {
-  matcher: ["/((?!api|_next|.*\\..*).*)"], // 👈 This goes here, not next.config.js
-};
 
 // import { NextRequest, NextResponse } from "next/server";
 
