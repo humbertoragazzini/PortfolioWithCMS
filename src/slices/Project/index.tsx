@@ -24,7 +24,7 @@ const Project: FC<ProjectProps> = ({ slice }) => {
       {slice.primary.technologies.length > 0 && (
         <>
           {slice.primary.technologies.map((tech) => {
-            return <p>{tech.name}</p>;
+            return <p key={JSON.stringify(tech)}>{tech.name}</p>;
           })}
         </>
       )}
