@@ -14,6 +14,7 @@
     "@prismicio/helpers": "^2.3.9",
     "@prismicio/next": "^2.0.1",
     "@prismicio/react": "^3.2.1",
+    "@react-three/drei": "^10.6.1",
     "@react-three/fiber": "^9.2.0",
     "@types/three": "^0.178.1",
     "next": "15.4.4",

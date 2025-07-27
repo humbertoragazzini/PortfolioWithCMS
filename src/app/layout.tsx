@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OverlayMenu from "@/components/atoms/OverlayMenu";
 import { Orbitron } from "next/font/google";
-import Main from "@/components/atoms/Main";
+import CanvasWrapper from "@/components/atoms/CanvasWrapper";
 
 const orbit = Orbitron({
   subsets: ["latin"],
@@ -27,9 +27,7 @@ export default function RootLayout({
         <div className="max-w-[1550px] mx-auto">
           <OverlayMenu></OverlayMenu>
         </div>
-        <div>
-          <Main>{children}</Main>
-        </div>
+        <div>{children}</div>
         <div className="max-w-[1550px] mx-auto">
           <h1 className="text-2xl text-white">Layout footer</h1>
         </div>
