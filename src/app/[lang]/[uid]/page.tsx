@@ -4,6 +4,7 @@ import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import { Canvas } from "@react-three/fiber";
+import CanvasWrapper from "@/components/atoms/CanvasWrapper";
 
 export default async function Page(props) {
   const params = await props.params;
@@ -13,8 +14,8 @@ export default async function Page(props) {
   const page = await client.getByUID("page", uid, { lang });
 
   return (
-    <Canvas>
-      <SliceZone slices={page.data.slices} components={components} />;
-    </Canvas>
+    <CanvasWrapper>
+      <SliceZone slices={page.data.slices} components={components} />
+    </CanvasWrapper>
   );
 }
