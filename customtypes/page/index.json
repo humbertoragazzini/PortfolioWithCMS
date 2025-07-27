@@ -1,9 +1,5 @@
 {
   "id": "page",
-  "label": "Page",
-  "repeatable": true,
-  "status": true,
-  "format": "page",
   "json": {
     "Main": {
       "uid": {
@@ -61,5 +57,9 @@
         }
       }
     }
-  }
+  },
+  "label": "Page",
+  "repeatable": true,
+  "status": true,
+  "format": "page"
 }
