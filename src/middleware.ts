@@ -5,8 +5,8 @@ export function middleware(request: NextRequest) {
   const locales = ["en-us", "es-es"];
   console.log("💡 Middleware triggered:", request.nextUrl.pathname); // 👈 Add this
 
-  if (locales.some((locale) => pathname.startsWith(`/${locale}`))) {
-    return NextResponse.next();
+  if (pathname == "/es-es" || pathname == "/en-us") {
+    return NextResponse.redirect(new URL(`/${pathname}/home`, request.url));
   }
 
   const cookieLang = request.cookies.get("NEXT_LOCALE")?.value;
@@ -15,7 +15,9 @@ export function middleware(request: NextRequest) {
 
   const lang = cookieLang || browserLang;
 
-  return NextResponse.redirect(new URL(`/${lang}${pathname}`, request.url));
+  return NextResponse.redirect(
+    new URL(`/${lang}${pathname ?? "home"}`, request.url)
+  );
 }
 
 export const config = {

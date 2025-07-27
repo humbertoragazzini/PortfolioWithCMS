@@ -14,7 +14,7 @@ const routes: Route[] = [
   {
     type: "page",
     uid: "home",
-    path: "/:lang",
+    path: "/:lang/home",
   },
   {
     type: "page",
