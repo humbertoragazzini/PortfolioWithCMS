@@ -12,6 +12,13 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "order": {
+          "type": "Number",
+          "config": {
+            "label": "Order",
+            "placeholder": "Order of the document, need to be 1 by one for logic"
+          }
+        },
         "title": {
           "type": "Text",
           "config": {

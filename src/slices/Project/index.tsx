@@ -14,8 +14,17 @@ export type ProjectProps = SliceComponentProps<Content.ProjectSlice>;
  */
 const Project: FC<ProjectProps> = ({ slice }) => {
   return (
-    <Html transform occlude>
-      <div className="text-white">
+    <Html
+      transform
+      occlude
+      rotation={[
+        0,
+        slice.primary.order % 2 !== 0 ? Math.PI / 4 : -Math.PI / 4,
+        0,
+      ]}
+      position={[0, 0, -5 * (slice.primary.order ?? 0)]}
+    >
+      <div className="text-white bg-red-400">
         <p>{slice.primary.title}</p>
         <p>{slice.primary.content}</p>
         {slice.primary.technologies.length > 0 && (

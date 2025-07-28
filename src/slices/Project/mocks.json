@@ -30,8 +30,8 @@
 							[
 								"link",
 								{
-									"__TYPE__": "LinkContent",
 									"key": "c6c2fbf0-2182-45f0-af2a-8a4d5d791d61",
+									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
 										"url": "https://prismic.io",
@@ -42,6 +42,11 @@
 						]
 					}
 				]
+			},
+			"order": {
+				"__TYPE__": "FieldContent",
+				"value": "62",
+				"type": "Number"
 			}
 		},
 		"items": []
