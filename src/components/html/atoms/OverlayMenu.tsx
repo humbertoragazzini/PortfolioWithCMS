@@ -32,7 +32,7 @@ export default function OverlayMenu() {
   return (
     <div className="text-base">
       <button
-        className="p-4 bg-red-400 hover:bg-red-300"
+        className="p-4 bg-red-400 hover:bg-red-300 font-base"
         onClick={(e) => {
           handleLanguage("en-us");
         }}

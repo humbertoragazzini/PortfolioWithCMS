@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OverlayMenu from "@/components/html/atoms/OverlayMenu";
 import { Orbitron } from "next/font/google";
