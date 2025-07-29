@@ -3,3 +3,7 @@
 body {
   background: black;
 }
+
+.text-base {
+  font-family: var(--Orbitron), sans-serif;
+}
