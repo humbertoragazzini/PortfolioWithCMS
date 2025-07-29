@@ -23,13 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${orbit.variable} antialiased font-base`}>
-        <div className="max-w-[1550px] mx-auto">
+        <div className="absolute overflow-visible z-30">
           <OverlayMenu></OverlayMenu>
         </div>
-        <div>{children}</div>
-        <div className="max-w-[1550px] mx-auto">
-          <h1 className="text-2xl text-white">Layout footer</h1>
-        </div>
+        <div className="relative z-0">{children}</div>
       </body>
     </html>
   );
