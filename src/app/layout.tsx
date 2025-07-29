@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import OverlayMenu from "@/components/html/atoms/OverlayMenu";
+import OverlayMenu from "@/components/html/Organisms/OverlayMenu";
 import { Orbitron } from "next/font/google";
-import CanvasWrapper from "@/components/rtf/atoms/CanvasWrapper";
 
 const orbit = Orbitron({
   subsets: ["latin"],

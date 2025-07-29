@@ -30,8 +30,8 @@ export default function OverlayMenu() {
   };
 
   return (
-    <div className="fixed top-0 left-0 bg-black h-screen w-screen text-base z-50">
-      <button
+    <div className="fixed top-0 left-0 bg-[rgba(75,0,125,0.25)] backdrop-blur-md h-screen w-screen text-base z-50">
+      {/* <button
         className="p-4 bg-red-400 hover:bg-red-300 font-base"
         onClick={(e) => {
           handleLanguage("en-us");
@@ -46,7 +46,7 @@ export default function OverlayMenu() {
         }}
       >
         Cambiar a espaniol
-      </button>
+      </button> */}
     </div>
   );
 }
