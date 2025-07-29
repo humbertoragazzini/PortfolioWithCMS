@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import OverlayMenu from "@/components/atoms/OverlayMenu";
+import OverlayMenu from "@/components/html/atoms/OverlayMenu";
 import { Orbitron } from "next/font/google";
-import CanvasWrapper from "@/components/atoms/CanvasWrapper";
+import CanvasWrapper from "@/components/rtf/atoms/CanvasWrapper";
 
 const orbit = Orbitron({
   subsets: ["latin"],

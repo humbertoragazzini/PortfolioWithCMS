@@ -30,7 +30,7 @@ export default function OverlayMenu() {
   };
 
   return (
-    <div>
+    <div className="text-base">
       <button
         className="p-4 bg-red-400 hover:bg-red-300"
         onClick={(e) => {
