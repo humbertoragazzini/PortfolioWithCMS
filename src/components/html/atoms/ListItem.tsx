@@ -40,10 +40,7 @@ export default function ListItem({
   }
 
   return (
-    <li
-      className={`ml-2 mb-2 list-outside list-image-diamond ${textColour} ${className}`}
-      style={style}
-    >
+    <li className={`ml-2 mb-2 ${textColour} ${className}`} style={style}>
       {children}
     </li>
   );

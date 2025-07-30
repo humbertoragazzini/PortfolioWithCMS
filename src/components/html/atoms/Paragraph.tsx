@@ -36,7 +36,7 @@ const paragraphTypes = {
  * </Paragraph>
  */
 
-//TODO - React node may need to be changed to prismic rich text
+//TODO - add themes to build the components
 export default function Paragraph({
   children,
   theme,
