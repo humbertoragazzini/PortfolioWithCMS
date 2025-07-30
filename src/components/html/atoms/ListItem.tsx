@@ -32,11 +32,11 @@ export default function ListItem({
   className,
   style,
 }: iListItem) {
-  let textColour = "text-fl-primary-500";
+  let textColour = "";
   if (theme === "secondary") {
-    textColour = "text-fl-secondary-500";
+    textColour = "";
   } else if (theme === "white") {
-    textColour = "text-white";
+    textColour = "";
   }
 
   return (

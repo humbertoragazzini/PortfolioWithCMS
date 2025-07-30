@@ -28,11 +28,7 @@ interface iList {
 
 export default function List({ children, theme, className, style }: iList) {
   return (
-    <ul
-      className={`ml-2 mb-4 list-outside list-image-diamond ${className}`}
-      style={style}
-      data-theme={theme}
-    >
+    <ul className={`ml-2 mb-4 ${className}`} style={style} data-theme={theme}>
       {children}
     </ul>
   );

@@ -55,7 +55,7 @@ export default function Heading({
 }: iHeading) {
   const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
 
-  const defaultClasses = `font-salt font-displaySatoSemi text-ink1 last:!pb-0 ${size !== undefined ? sizes[size] : sizes[1]} ${className}`;
+  const defaultClasses = `text-ink1 last:!pb-0 ${size !== undefined ? sizes[size] : sizes[1]} ${className}`;
   return React.createElement(
     HeadingTag,
     { className: defaultClasses, "data-theme": theme, style },

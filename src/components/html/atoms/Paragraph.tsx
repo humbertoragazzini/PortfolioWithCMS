@@ -7,33 +7,9 @@ interface iParagraph {
 }
 
 const paragraphTypes = {
-  smallstandfirst: {
-    sizes: "text-md md:text-xl",
-    font: "font-salt font-displaySatoReg pb-8",
-  },
-  standfirst: {
-    sizes: "text-md md:text-xl lg:text-2xl",
-    font: "font-salt font-displaySatoReg pb-8",
-  },
-  standfirstSemi: {
-    sizes: "text-xl md:text-3xl",
-    font: "font-salt font-displaySatoSemi pb-8",
-  },
-  quoteSmall: {
-    sizes: "text-xl md:text-2xl lg:text-3xl highlight-text pb-6",
-    font: "font-salt font-displaySatoSemi",
-  },
-  quoteMedium: {
-    sizes: "text-xl md:text-3xl lg:text-4xl highlight-text pb-7",
-    font: "font-salt font-displaySatoSemi",
-  },
-  quoteLarge: {
-    sizes: "text-2xl md:text-4xl lg:text-5xl highlight-text pb-8",
-    font: "font-salt font-displaySatoSemi",
-  },
-  tag: {
-    sizes: "text-base md:text-lg",
-    font: "font-salt font-displaySatoSemi",
+  example: {
+    sizes: "",
+    font: "",
   },
 };
 
