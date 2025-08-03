@@ -27,7 +27,7 @@ const Project: FC<ProjectProps> = ({ slice }) => {
       material={<meshBasicMaterial></meshBasicMaterial>}
       position={[-10 * (slice.primary.order % 2 !== 0 ? 1 : -1), 0, -5]}
     >
-      <div className="text-white w-[calc(100vw-50px)] bg-amber-700">
+      <div className="text-white w-[calc(100vw-50px)] bg-amber-700 font-base">
         <p>{slice.primary.title}</p>
         <p>{slice.primary.content}</p>
         {slice.primary.technologies.length > 0 && (
