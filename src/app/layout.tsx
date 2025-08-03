@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import OverlayMenu from "@/components/html/organisms/OverlayMenu";
+import OverlayMenu from "@/components/html/organisms/menu/OverlayMenu";
 import { Orbitron } from "next/font/google";
 
 const orbit = Orbitron({
