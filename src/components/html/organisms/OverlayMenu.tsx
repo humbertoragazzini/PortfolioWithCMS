@@ -1,6 +1,11 @@
 "use client";
 
+import useStore from "@/hooks/zustand";
+
 export default function OverlayMenu() {
+  const menuOpen = useStore((state) => state.menuOpen);
+  const toggleMenu = useStore((state) => state.toggleMenu);
+
   const handleLanguage = async (lang: string) => {
     await fetch("/api/set-lang", {
       method: "POST",
@@ -30,23 +35,28 @@ export default function OverlayMenu() {
   };
 
   return (
-    <div className="fixed top-0 left-0 bg-[rgba(75,0,125,0.25)] backdrop-blur-md h-screen w-screen text-base z-50">
-      {/* <button
-        className="p-4 bg-red-400 hover:bg-red-300 font-base"
-        onClick={(e) => {
-          handleLanguage("en-us");
-        }}
-      >
-        Change to english
+    <>
+      <button className="fixed top-0 right-0 z-50 p-4 bg-red-400 hover:bg-amber-200">
+        Open menu
       </button>
-      <button
-        className="p-4 bg-red-400 hover:bg-red-300"
-        onClick={(e) => {
-          handleLanguage("es-es");
-        }}
-      >
-        Cambiar a espaniol
-      </button> */}
-    </div>
+      <div className="fixed top-0 left-0 bg-[rgba(75,0,125,0.25)] backdrop-blur-md text-base z-40 h-screen w-screen">
+        <button
+          className="p-4 bg-red-400 hover:bg-red-300 font-base"
+          onClick={(e) => {
+            handleLanguage("en-us");
+          }}
+        >
+          Change to english
+        </button>
+        <button
+          className="p-4 bg-red-400 hover:bg-red-300"
+          onClick={(e) => {
+            handleLanguage("es-es");
+          }}
+        >
+          Cambiar a espaniol
+        </button>
+      </div>
+    </>
   );
 }
