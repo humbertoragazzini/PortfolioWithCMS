@@ -11,9 +11,17 @@ export default function Settings() {
       animate={{
         x: menuOpen == "conf" ? "0vw" : "100vw",
       }}
-      className="fixed top-0 left-0 bg-[rgba(75,0,125,0.25)] backdrop-blur-md text-base z-40 h-screen w-screen"
+      className="fixed top-0 left-0 bg-[rgba(75,0,125,0.25)] backdrop-blur-md text-base z-40 h-screen w-screen flex justify-center items-center flex-col"
     >
-      settings
+      <button className="p-4 bg-red-400 hover:bg-red-300 font-base">
+        Settings
+      </button>
+      <button
+        className="p-4 bg-red-400 hover:bg-red-300 font-base"
+        onClick={() => toggleMenu("main")}
+      >
+        Go back
+      </button>
     </motion.div>
   );
 }
