@@ -43,6 +43,13 @@ export default function OverlayMenu() {
         >
           Language
         </button>
+        <button className="p-4 bg-red-400 hover:bg-red-300">Github</button>
+        <button
+          className="p-4 bg-red-400 hover:bg-red-300"
+          onClick={() => toggleMenu(null)}
+        >
+          Back
+        </button>
       </motion.div>
       <Settings></Settings>
       <Language></Language>

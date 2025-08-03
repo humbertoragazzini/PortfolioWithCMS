@@ -7,6 +7,10 @@ export default function CanvasWrapper({ children }: any) {
   return (
     <div className="w-full h-screen">
       <Canvas>
+        <mesh>
+          <boxGeometry></boxGeometry>
+          <meshBasicMaterial></meshBasicMaterial>
+        </mesh>
         {children}
         <OrbitControls></OrbitControls>
       </Canvas>
