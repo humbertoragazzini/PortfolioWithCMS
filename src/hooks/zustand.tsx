@@ -2,8 +2,11 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  menuOpen: false,
-  toggleMenu: () => set((state) => ({ menuOpen: !state.menuOpen })),
+  menuOpen: null,
+  toggleMenu: (value) =>
+    set((state) => ({
+      menuOpen: state.menuOpen === value ? "" : value,
+    })),
 }));
 
 export default useStore;
