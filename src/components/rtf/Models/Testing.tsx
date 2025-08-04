@@ -27,6 +27,30 @@ export function Model(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Cube002.geometry}
+        position={[4.2, 0, 0]}
+      >
+        <meshBasicMaterial color="white"></meshBasicMaterial>
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004.geometry}
+        position={[-4.2, 0, 0]}
+      >
+        <meshBasicMaterial color="white"></meshBasicMaterial>
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube013.geometry}
+        position={[2.1, 4.2, 0]}
+      >
+        <meshBasicMaterial color="white"></meshBasicMaterial>
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Cube019.geometry}
         position={[-4.2, 6.3, 0]}
       >
