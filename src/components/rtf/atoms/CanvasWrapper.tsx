@@ -1,6 +1,6 @@
 "use client";
 
-import { Html, OrbitControls } from "@react-three/drei";
+import { Html, OrbitControls, PointerLockControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 export default function CanvasWrapper({ children }: any) {
@@ -12,7 +12,9 @@ export default function CanvasWrapper({ children }: any) {
           <meshBasicMaterial></meshBasicMaterial>
         </mesh>
         {children}
-        <OrbitControls></OrbitControls>
+        {/* <OrbitControls></OrbitControls> */}
+        {/* <PointerLockControls /> */}
+        <PointerLockControls />
       </Canvas>
     </div>
   );
