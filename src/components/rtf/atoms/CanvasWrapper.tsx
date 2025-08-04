@@ -1,7 +1,9 @@
 "use client";
 
 import {
+  FirstPersonControls,
   Html,
+  MapControls,
   OrbitControls,
   PointerLockControls,
   TrackballControls,
@@ -19,7 +21,10 @@ export default function CanvasWrapper({ children }: any) {
         {children}
         {/* <OrbitControls></OrbitControls> */}
         {/* <PointerLockControls /> */}
-        <TrackballControls />
+        {/* <TrackballControls /> */}
+        {/* <MapControls></MapControls> */}
+        {/* <FirstPersonControls></FirstPersonControls> */}
+        <FlyControls movementSpeed={1} rollSpeed={0.5} dragToLook />
       </Canvas>
     </div>
   );
