@@ -10,15 +10,14 @@ import {
   TrackballControls,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Model } from "../Models/Testing";
 
 export default function CanvasWrapper({ children }: any) {
   return (
     <div className="w-full h-screen">
       <Canvas>
-        <mesh>
-          <boxGeometry></boxGeometry>
-          <meshBasicMaterial></meshBasicMaterial>
-        </mesh>
+        <ambientLight></ambientLight>
+        <Model></Model>
         {children}
         <OrbitControls></OrbitControls>
         {/* <PointerLockControls /> */}
