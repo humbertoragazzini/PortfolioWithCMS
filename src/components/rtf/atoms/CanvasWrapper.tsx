@@ -2,6 +2,7 @@
 
 import {
   FirstPersonControls,
+  FlyControls,
   Html,
   MapControls,
   OrbitControls,
@@ -19,12 +20,12 @@ export default function CanvasWrapper({ children }: any) {
           <meshBasicMaterial></meshBasicMaterial>
         </mesh>
         {children}
-        {/* <OrbitControls></OrbitControls> */}
+        <OrbitControls></OrbitControls>
         {/* <PointerLockControls /> */}
         {/* <TrackballControls /> */}
         {/* <MapControls></MapControls> */}
         {/* <FirstPersonControls></FirstPersonControls> */}
-        <FlyControls movementSpeed={1} rollSpeed={0.5} dragToLook />
+        {/* <FlyControls movementSpeed={1} rollSpeed={0.5} dragToLook /> */}
       </Canvas>
     </div>
   );
