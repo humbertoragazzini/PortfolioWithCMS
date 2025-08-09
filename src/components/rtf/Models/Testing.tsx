@@ -60,9 +60,14 @@ export function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.Cube025.geometry}
-        position={[0, -2.1, 0]}
+        position={[0, -2.1, 1]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(1.5, 1.5, 1.5)}
+        ></meshBasicMaterial>
+        <mesh>
+          <pointLight intensity={150} position={[0, 0, 1]}></pointLight>
+        </mesh>
       </mesh>
       <mesh
         castShadow
