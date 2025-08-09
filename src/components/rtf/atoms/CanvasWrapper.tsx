@@ -17,12 +17,25 @@ export default function CanvasWrapper({ children }: any) {
     <div className="w-full h-screen">
       <Canvas>
         <ambientLight></ambientLight>
+        <perspectiveCamera
+          makeDefault={true}
+          rotation={[Math.PI / 2, 0, 0]}
+          fov={75}
+          near={0.1}
+          far={1000}
+        ></perspectiveCamera>
         <Model></Model>
+        <MapControls
+          enableRotate={false}
+          enablePan={true}
+          screenSpacePanning={true}
+          minDistance={5}
+          maxDistance={10}
+        ></MapControls>
         {children}
-        <OrbitControls></OrbitControls>
+        {/* <OrbitControls></OrbitControls> */}
         {/* <PointerLockControls /> */}
         {/* <TrackballControls /> */}
-        {/* <MapControls></MapControls> */}
         {/* <FirstPersonControls></FirstPersonControls> */}
         {/* <FlyControls movementSpeed={1} rollSpeed={0.5} dragToLook /> */}
       </Canvas>
