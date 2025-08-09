@@ -24,7 +24,9 @@ export default function CanvasWrapper({ children }: any) {
           near={0.1}
           far={1000}
         ></perspectiveCamera>
-        <Model></Model>
+        <mesh rotation={[0, Math.PI / 2, 0]} position={[0, 0, 0]}>
+          <Model></Model>
+        </mesh>
         <MapControls
           enableRotate={false}
           enablePan={true}
