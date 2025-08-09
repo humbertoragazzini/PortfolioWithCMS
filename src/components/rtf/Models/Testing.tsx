@@ -30,7 +30,9 @@ export function Model(props) {
         geometry={nodes.Cube002.geometry}
         position={[4.2, 0, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -38,7 +40,9 @@ export function Model(props) {
         geometry={nodes.Cube004.geometry}
         position={[-4.2, 0, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -46,7 +50,9 @@ export function Model(props) {
         geometry={nodes.Cube013.geometry}
         position={[2.1, 4.2, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -54,7 +60,9 @@ export function Model(props) {
         geometry={nodes.Cube019.geometry}
         position={[-4.2, 6.3, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -75,7 +83,9 @@ export function Model(props) {
         geometry={nodes.Cube030.geometry}
         position={[0, -6.3, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -83,7 +93,9 @@ export function Model(props) {
         geometry={nodes.Cube032.geometry}
         position={[4.2, -6.3, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
       <mesh
         castShadow
@@ -91,7 +103,9 @@ export function Model(props) {
         geometry={nodes.Cube034.geometry}
         position={[-4.2, -6.3, 0]}
       >
-        <meshBasicMaterial color="white"></meshBasicMaterial>
+        <meshBasicMaterial
+          color={new THREE.Color(0.75, 0.75, 0.75)}
+        ></meshBasicMaterial>
       </mesh>
     </group>
   );
