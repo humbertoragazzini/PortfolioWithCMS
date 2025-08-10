@@ -1,8 +1,8 @@
 "use client";
 
 import {
-  FirstPersonControls,
-  FlyControls,
+  // FirstPersonControls,
+  // FlyControls,
   Html,
   MapControls,
   OrbitControls,
