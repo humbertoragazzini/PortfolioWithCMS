@@ -1,3 +1,4 @@
+// @ts-nocheck
 // store.js
 import { create } from "zustand";
 

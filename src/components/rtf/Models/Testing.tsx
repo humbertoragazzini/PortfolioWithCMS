@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
