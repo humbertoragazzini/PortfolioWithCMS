@@ -5,7 +5,7 @@ import {
   // FlyControls,
   // Html,
   MapControls,
-  OrbitControls,
+  // OrbitControls,
   PointerLockControls,
   TrackballControls,
 } from "@react-three/drei";
