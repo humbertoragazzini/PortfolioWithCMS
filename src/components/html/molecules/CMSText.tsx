@@ -6,7 +6,6 @@ import Paragraph from "../atoms/Paragraph";
 import Heading from "../atoms/Heading";
 import ListItem from "../atoms/ListItem";
 import List from "../atoms/List";
-import { PrismicNextLink } from "@prismicio/next";
 
 interface iCMSText {
   field: RichTextField;
