@@ -7,7 +7,7 @@ import {
   MapControls,
   // OrbitControls,
   // PointerLockControls,
-  TrackballControls,
+  // TrackballControls,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Model } from "../Models/Testing";
