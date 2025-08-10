@@ -3,7 +3,6 @@
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
-import { Canvas } from "@react-three/fiber";
 import CanvasWrapper from "@/components/rtf/atoms/CanvasWrapper";
 
 export default async function Page(props) {
