@@ -43,7 +43,7 @@ export default function Language() {
     >
       <button
         className="p-4 bg-red-400 hover:bg-red-300 font-base"
-        onClick={(e) => {
+        onClick={() => {
           handleLanguage("en-us");
         }}
       >
@@ -51,7 +51,7 @@ export default function Language() {
       </button>
       <button
         className="p-4 bg-red-400 hover:bg-red-300"
-        onClick={(e) => {
+        onClick={() => {
           handleLanguage("es-es");
         }}
       >
