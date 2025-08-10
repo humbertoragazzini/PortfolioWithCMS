@@ -1,5 +1,5 @@
-"use client";
 // @ts-nocheck
+"use client";
 import { isFilled, RichTextField } from "@prismicio/client";
 import { PrismicLink, PrismicRichText } from "@prismicio/react";
 import Paragraph from "../atoms/Paragraph";
