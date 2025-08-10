@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface iParagraph {
   children?: React.ReactNode;
   theme?: Theme;

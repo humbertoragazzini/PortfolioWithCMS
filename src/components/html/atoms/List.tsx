@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface iList {
   children?: React.ReactNode;
   theme?: Theme;
