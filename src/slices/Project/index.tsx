@@ -3,7 +3,7 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { Html } from "@react-three/drei";
-import * as THREE from "three";
+// import * as THREE from "three";
 
 /**
  * Props for `Project`.
