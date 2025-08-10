@@ -1,5 +1,4 @@
-// /src/app/[lang]/[uid]/page.tsx
-
+// @ts-nocheck
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";

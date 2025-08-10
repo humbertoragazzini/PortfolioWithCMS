@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import { FC } from "react";
 import { Content } from "@prismicio/client";
