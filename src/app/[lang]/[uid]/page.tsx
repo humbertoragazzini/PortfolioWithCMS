@@ -5,7 +5,7 @@ import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import CanvasWrapper from "@/components/rtf/atoms/CanvasWrapper";
 
-export default async function Page(props) {
+export default async function Page(props: any) {
   const params = await props.params;
   const { lang, uid } = params;
 

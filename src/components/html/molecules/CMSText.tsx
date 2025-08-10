@@ -53,7 +53,7 @@ export default function CMSText({
         <PrismicRichText
           field={field}
           components={{
-            paragraph: ({ children }) => (
+            paragraph: ({ children }: any) => (
               <Paragraph
                 theme={theme}
                 paragraphType={paragraphType}
@@ -63,7 +63,7 @@ export default function CMSText({
                 {children}
               </Paragraph>
             ),
-            hyperlink: ({ node, children }) => (
+            hyperlink: ({ node, children }: any) => (
               <PrismicLink
                 field={node.data}
                 className={
@@ -75,7 +75,7 @@ export default function CMSText({
                 {children}
               </PrismicLink>
             ),
-            em: ({ children }) => (
+            em: ({ children }: any) => (
               <em
                 className={
                   "bg-highlight-text underline-effect w-fit not-italic !inline"
@@ -84,17 +84,17 @@ export default function CMSText({
                 {children}
               </em>
             ),
-            list: ({ children }) => (
+            list: ({ children }: any) => (
               <List theme={theme} className={className} style={style}>
                 {children}
               </List>
             ),
-            listItem: ({ children }) => (
+            listItem: ({ children }: any) => (
               <ListItem theme={theme} className={className} style={style}>
                 {children}
               </ListItem>
             ),
-            heading1: ({ children }) => (
+            heading1: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={1}
@@ -105,7 +105,7 @@ export default function CMSText({
                 {children}
               </Heading>
             ),
-            heading2: ({ children }) => (
+            heading2: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={2}
@@ -116,7 +116,7 @@ export default function CMSText({
                 {children}
               </Heading>
             ),
-            heading3: ({ children }) => (
+            heading3: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={3}
@@ -127,7 +127,7 @@ export default function CMSText({
                 {children}
               </Heading>
             ),
-            heading4: ({ children }) => (
+            heading4: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={4}
@@ -138,7 +138,7 @@ export default function CMSText({
                 {children}
               </Heading>
             ),
-            heading5: ({ children }) => (
+            heading5: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={5}
@@ -149,7 +149,7 @@ export default function CMSText({
                 {children}
               </Heading>
             ),
-            heading6: ({ children }) => (
+            heading6: ({ children }: any) => (
               <Heading
                 theme={theme}
                 level={6}
