@@ -1,38 +1,12 @@
 import { PrismicRichTextProps } from "@prismicio/react";
 
-export {};
+export { };
 
 declare global {
   interface IJumpLink {
     id: string;
     title: string;
   }
-
-  interface ISustainabilityAccordion {
-    title: PrismicRichTextProps["field"];
-    content: PrismicRichTextProps["field"];
-  }
-
-  type carbonLevel = "minimal" | "ultralow" | "low";
-  interface ISliceContext {
-    carbonLevel: any;
-    showAnimations: boolean;
-    showImages: boolean;
-    includeFonts: boolean;
-    navigation?: any;
-  }
-
-  type CtaStyle =
-    | "large"
-    | "medium"
-    | "small"
-    | "smallGreen"
-    | "withStandfirst"
-    | "ctaCaseStudie"
-    | "quoteSmall"
-    | "quoteMedium"
-    | "withImage"
-    | "quoteLarge";
 
   type ButtonIcon =
     | "arrow-right"
