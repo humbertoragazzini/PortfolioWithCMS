@@ -46,31 +46,12 @@ declare global {
 
   type Sizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
-  type ColsFLType =
-    | "type-col-6-even"
-    | "type-col-6-odd"
-    | "6"
-    | "7"
-    | "8"
-    | "9"
-    | "10"
-    | "12";
-
-  type Spacing = "large" | "medium" | "small" | "none";
-
   type Level = 1 | 2 | 3 | 4 | 5 | 6;
 
   type Speeds = {
     small: number;
     medium: number;
     big: number;
-  };
-
-  type AnimatedHeader = {
-    type?: string;
-    fadeIn?: boolean;
-    speeds: Speeds;
-    scrollContainerRef: RefObject<HTMLDivElement>;
   };
 
   type MyIcons = {
