@@ -34,49 +34,6 @@ declare global {
     | "tertiary"
     | "jump-link";
 
-  type GradientBackgroundColor =
-    | "Transparent"
-    | "PurplePink"
-    | "OrangePink"
-    | "YellowPink"
-    | "TurquoiseDeepwater"
-    | "TurquoiseLightGreen"
-    | "TurquoiseLightBlue"
-    | "YellowOrange"
-    | "YellowTurquoise"
-    | "CherryRed"
-    | "Grey";
-
-  type ColsFLPosition =
-    | "left"
-    | "left-50"
-    | "left-25"
-    | "left-10"
-    | "center"
-    | "right-10"
-    | "right-25"
-    | "right-50"
-    | "right";
-
-  type Composition =
-    | "First"
-    | "First"
-    | "Second"
-    | "Second"
-    | "Third"
-    | "Third"
-    | "Fourth"
-    | "Fourth"
-    | "Fifth"
-    | "Fifth"
-    | "Sixth"
-    | "Sixth"
-    | "Seventh"
-    | "Seventh"
-    | "Square";
-
-  type Orientation = "Left" | "Right";
-
   type ParagraphType =
     | "body"
     | "smallstandfirst"
